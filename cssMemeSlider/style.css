@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    }
+    
+    html {
+    scroll-behavior: smooth;   
+    background: rgb(216,160,255);
+background: radial-gradient(circle, rgba(216,160,255,1) 0%, rgba(255,255,255,1) 96%);
+    }
+/* разрешение 1440px */
+
+.wrapper {
+margin-top: 5rem;
+
+}
+
+.img {
+    height: 25rem;
+    width: 45rem;
+    object-fit: cover;
+}
+
+.slider_wrapper {
+    position: static;
+    flex-shrink: 0;
+    background-color: aliceblue;
+    margin: 0 auto;
+    max-width: 45rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.img_wrapper {
+    margin-top: 5rem;
+    display: flex;
+}
+
+.controls_wrapper{
+    display: flex;
+    margin-left: 35rem;
+}
+.dot{
+cursor: pointer;
+margin: 0.5rem;
+width: 1rem;
+height: 1rem;
+flex-shrink: 0;
+border-radius: 3.1rem;
+background-image: linear-gradient(10deg, #ff7426 0, #f93a13 100%);
+}
+
+.dot:hover {
+    background:linear-gradient(10deg, #6bd9e3 0, #1360f9 100%);
+}
+
+.meme-title {
+padding-left: 1rem;
+font-size: 1.5rem;
+line-height: 2rem;
+letter-spacing: 0.1rem;
+}
+
+a{
+    cursor: default;
+    text-decoration: none;
+    color: black;
+}
+
+/* разрешение <1000px */
+
+/* разрешение 500px */
