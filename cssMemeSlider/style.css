@@ -82,3 +82,30 @@ label {
 input[name="radio"] {
     visibility: hidden;
 }
+
+#control1:checked~.slides .img-1{
+    margin-left: 0;
+}
+#control2:checked~.slides .img-1{
+    margin-left: -25%;
+}
+#control3:checked~.slides .img-1{
+    margin-left: -50%;
+}
+#control4:checked~.slides .img-1{
+    margin-left: -75%;
+}
+
+#control1:checked~.controls .dot1{
+    background: rgb(156, 28, 139);
+}
+
+#control2:checked~.controls .dot2{
+    background: rgb(156, 28, 139);
+}
+#control3:checked~.controls .dot3{
+    background: rgb(156, 28, 139);
+}
+#control4:checked~.controls .dot4{
+    background: rgb(156, 28, 139);
+}
