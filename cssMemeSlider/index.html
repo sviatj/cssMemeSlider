@@ -4,39 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <title>CSS Slider</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="slider_wrapper">
-            <div class="img_wrapper">
-            <a class="img_1">
-            <img src="assets/img1.jpg" class="img" alt="studying">
-            <p class="meme-title">When studying gets hard</p>
-        </a>
-        <a class="img_2">
-            <img src="assets/img2.png" class="img" alt="supernatural">
-            <p class="meme-title">And the road seems so far</p>
-        </a>
-        <a class="img_3">
-            <img src="assets/img3.jpg" class="img" alt="friends">
-            <p class="meme-title">Remember your friends</p>
-        </a>
-        <a class="img_4">
-            <img src="assets/img4.jpeg" class="img" alt="praire dogs">
-            <p class="meme-title">They got your back!</p>
-        </a>
-            </div>
-            <div class="controls_wrapper">
-                <a href="img_1" class="dot"></a>
-                <a href="img_2" class="dot"></a>
-                <a href="img_3" class="dot"></a>
-                <a href="img_4" class="dot"></a>
-                </div>
+    <div class="slider_wrapper">
+        <input type="radio" name="radio" id="control1" checked>
+        <input type="radio" name="radio" id="control2">
+        <input type="radio" name="radio" id="control3">
+        <input type="radio" name="radio" id="control4">
+        <div class="slides">
+            <div class="slide img-1"><img src="assets/img1.jpg" alt=""><p class="meme-title">When studying gets hard</p></div>
+            <div class="slide"><img src="assets/img2.png" alt=""><p class="meme-title">And the road seems so far</p></div>
+            <div class="slide"><img src="assets/img3.jpeg" alt=""><p class="meme-title">Remember your friends</p></div>
+            <div class="slide"><img src="assets/img4.jpeg" alt=""><p class="meme-title">They got your back!</p></div>
+        </div>
+            <div class="controls">
+                <label for="control1"><div class="dot dot1"></div></label>
+                <label for="control2"><div class="dot dot2"></div></label>
+                <label for="control3"><div class="dot dot3"></div></label>
+                <label for="control4"><div class="dot dot4"></div></label>
         </div>
 
     </div>
-
 </body>
 </html>

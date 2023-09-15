@@ -1,71 +1,84 @@
 * {
-    box-sizing: border-box;
-    }
-    
-    html {
-    scroll-behavior: smooth;   
-    background: rgb(216,160,255);
-background: radial-gradient(circle, rgba(216,160,255,1) 0%, rgba(255,255,255,1) 96%);
-    }
-/* разрешение 1440px */
-
-.wrapper {
-margin-top: 5rem;
-
+    margin: 0;
+    padding: 0;
 }
 
-.img {
-    height: 25rem;
-    width: 45rem;
-    object-fit: cover;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:  rgb(61, 61, 61);
 }
 
 .slider_wrapper {
-    position: static;
-    flex-shrink: 0;
-    background-color: aliceblue;
     margin: 0 auto;
-    max-width: 45rem;
-    border-radius: 1rem;
-    overflow: hidden;
-}
-
-.img_wrapper {
     margin-top: 5rem;
-    display: flex;
+    max-width: 45rem;
+    border-radius: 2%;
+    overflow: hidden;
+    height: 35rem;
+    background-color: azure;
 }
 
-.controls_wrapper{
-    display: flex;
-    margin-left: 35rem;
-}
-.dot{
-cursor: pointer;
-margin: 0.5rem;
-width: 1rem;
-height: 1rem;
-flex-shrink: 0;
-border-radius: 3.1rem;
-background-image: linear-gradient(10deg, #ff7426 0, #f93a13 100%);
+img{
+    width: 96%;
+    padding: 0.9rem;
+    height: 23rem;
+    object-fit: scale-down;
+    margin: 0 auto;
 }
 
-.dot:hover {
-    background:linear-gradient(10deg, #6bd9e3 0, #1360f9 100%);
+.slides {
+    display: flex;
+    width: 400%;
+}
+
+.slide {
+    transition: 1.5s ease;
+    width: 25%;
+    height: 100%;
+}
+
+.meme-title{
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 400;
 }
 
 .meme-title {
-padding-left: 1rem;
-font-size: 1.5rem;
-line-height: 2rem;
-letter-spacing: 0.1rem;
+    margin: 1rem 0 0 1rem;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.1em;
+    transition: .4s;
 }
 
-a{
-    cursor: default;
-    text-decoration: none;
-    color: black;
+.controls{
+    align-items: center;
+    transform: translateX(0%);
+    display: flex;
+    margin-top: 1rem;
+    transition: 1s ease;
+    animation-name: left;
 }
 
-/* разрешение <1000px */
+.dot {
+    cursor: pointer;
+    width: 3rem;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+    background:linear-gradient(10deg, #6bd9e3 0, #1360f9 100%);
+    transition: all 1s ease-in-out;
+}
 
-/* разрешение 500px */
+label {
+    padding: 0.7rem;
+}
+
+.dot:hover {
+    background:linear-gradient(10deg, #bb6be3 0, #1360f9 100%);
+}
+
+input[name="radio"] {
+    visibility: hidden;
+}
