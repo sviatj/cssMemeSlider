@@ -109,3 +109,10 @@ input[name="radio"] {
 #control4:checked~.controls .dot4{
     background: rgb(156, 28, 139);
 }
+
+@media (min-width: 780px) {
+    .controls {
+    transform: translateX(30%);
+    }
+
+    }
