@@ -1,25 +1,31 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-html {
+      }                            
+                                                                
+html {                            
     scroll-behavior: smooth;
 }
 
 body {
-    background:  rgb(38, 45, 47);
+    background:  rgb(139, 198, 225);
+}
+.main_container {
+    position: static;
+    display: block;
+    margin-top: 5rem;
+    overflow: hidden;
 }
 
 .slider_wrapper {
     margin: 0 auto;
-    margin-top: 5rem;
     max-width: 45rem;
-    border-radius: 2%;
+    border-radius: 3%;
     overflow: hidden;
     height: 35rem;
     background-color: azure;
 }
+
 
 img{
     width: 96%;
@@ -31,30 +37,18 @@ img{
 
 .slides {
     display: flex;
+    flex-shrink: 1;
     width: 400%;
 }
 
 .slide {
     transition: 1.5s ease;
     width: 25%;
-    height: 100%;
+    height: 90%;
 }
 
-.meme-title{
-font-size: 1.5rem;
-font-style: normal;
-font-weight: 400;
-}
 
-.meme-title {
-    margin: 1rem 0 0 1rem;
-    color: rgb(0, 0, 0);
-    letter-spacing: 0.1em;
-    transition: .4s;
-}
-
-.controls{
-    align-items: center;
+.controls_wrapper{
     transform: translateX(0%);
     display: flex;
     margin-top: 1rem;
@@ -69,18 +63,36 @@ font-weight: 400;
     height: 0.5rem;
     background:linear-gradient(10deg, #6bd9e3 0, #1360f9 100%);
     transition: all 1s ease-in-out;
+    box-shadow: 0 0.3rem 1rem 0 rgba(34, 60, 80, 1);
 }
 
 label {
-    padding: 0.7rem;
+    cursor: pointer;
+    padding: 0.8rem;
+
 }
 
 .dot:hover {
     background:linear-gradient(10deg, #bb6be3 0, #1360f9 100%);
+
 }
 
-input[name="radio"] {
-    visibility: hidden;
+.meme-title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    }
+    
+    .meme-title {
+        margin: 1rem 0 0 1rem;
+        color: rgb(40, 40, 40);
+        letter-spacing: 0.1em;
+        transition: .4s;
+    }
+
+input {
+   visibility: hidden;
 }
 
 #control1:checked~.slides .img-1{
@@ -96,23 +108,25 @@ input[name="radio"] {
     margin-left: -75%;
 }
 
-#control1:checked~.controls .dot1{
-    background: rgb(156, 28, 139);
+#control1:checked~.controls_wrapper .dot1{
+    background: rgb(247, 107, 114);
 }
 
-#control2:checked~.controls .dot2{
-    background: rgb(156, 28, 139);
+#control2:checked~.controls_wrapper .dot2{
+    background: rgb(247, 107, 114);
 }
-#control3:checked~.controls .dot3{
-    background: rgb(156, 28, 139);
+#control3:checked~.controls_wrapper .dot3{
+    background: rgb(247, 107, 114);
 }
-#control4:checked~.controls .dot4{
-    background: rgb(156, 28, 139);
+#control4:checked~.controls_wrapper .dot4{
+    background: rgb(247, 107, 114);
 }
 
 @media (min-width: 780px) {
-    .controls {
+    .controls_wrapper {
     transform: translateX(30%);
     }
-
+    .meme-title {
+        transform: translateX(0%);
+    }
     }
