@@ -122,7 +122,7 @@ input {
     background: rgb(247, 107, 114);
 }
 
-@media (min-width: 780px) {
+@media (min-width: 900px) {
     .controls_wrapper {
     transform: translateX(30%);
     }
