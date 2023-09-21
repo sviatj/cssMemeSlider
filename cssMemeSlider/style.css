@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+      }                            
+                                                                
+html {                            
+    scroll-behavior: smooth;
+}
+
+body {
+    background:  rgb(139, 198, 225);
+}
+.main_container {
+    position: static;
+    display: block;
+    margin-top: 5rem;
+    overflow: hidden;
+}
+
+.slider_wrapper {
+    margin: 0 auto;
+    max-width: 45rem;
+    border-radius: 3%;
+    overflow: hidden;
+    height: 35rem;
+    background-color: azure;
+}
+
+
+img{
+    width: 96%;
+    padding: 0.9rem;
+    height: 23rem;
+    object-fit: scale-down;
+    margin: 0 auto;
+}
+
+.slides {
+    display: flex;
+    flex-shrink: 1;
+    width: 400%;
+}
+
+.slide {
+    transition: 1.5s ease;
+    width: 25%;
+    height: 90%;
+}
+
+
+.controls_wrapper{
+    transform: translateX(0%);
+    display: flex;
+    margin-top: 1rem;
+    transition: 1s ease;
+    animation-name: left;
+}
+
+.dot {
+    cursor: pointer;
+    width: 3rem;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+    background:linear-gradient(10deg, #6bd9e3 0, #1360f9 100%);
+    transition: all 1s ease-in-out;
+    box-shadow: 0 0.3rem 1rem 0 rgba(34, 60, 80, 1);
+}
+
+label {
+    cursor: pointer;
+    padding: 0.8rem;
+
+}
+
+.dot:hover {
+    background:linear-gradient(10deg, #bb6be3 0, #1360f9 100%);
+
+}
+
+.meme-title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    }
+    
+    .meme-title {
+        margin: 1rem 0 0 1rem;
+        color: rgb(40, 40, 40);
+        letter-spacing: 0.1em;
+        transition: .4s;
+    }
+
+input {
+   visibility: hidden;
+}
+
+#control1:checked~.slides .img-1{
+    margin-left: 0;
+}
+#control2:checked~.slides .img-1{
+    margin-left: -25%;
+}
+#control3:checked~.slides .img-1{
+    margin-left: -50%;
+}
+#control4:checked~.slides .img-1{
+    margin-left: -75%;
+}
+
+#control1:checked~.controls_wrapper .dot1{
+    background: rgb(247, 107, 114);
+}
+
+#control2:checked~.controls_wrapper .dot2{
+    background: rgb(247, 107, 114);
+}
+#control3:checked~.controls_wrapper .dot3{
+    background: rgb(247, 107, 114);
+}
+#control4:checked~.controls_wrapper .dot4{
+    background: rgb(247, 107, 114);
+}
+
+@media (min-width: 900px) {
+    .controls_wrapper {
+    transform: translateX(30%);
+    }
+    .meme-title {
+        transform: translateX(0%);
+    }
+    }
